@@ -1,0 +1,139 @@
+$navbar-default-bg:#ffffff;
+$navbar-default-border:#f0f0f0;
+$body-bg:#f0f0f0;
+$modal-backdrop-bg: #f0f0f0;
+$social-color :#999999;
+
+$titles-color:#666666;
+$text-color:#999999;
+
+@font-face {
+	font-family: 'Knockout';
+	src:url('knockout-htf27.eot');
+	src:url('knockout-htf27.eot?#iefix') format('embedded-opentype'),
+	url('knockout-htf27.woff') format('woff'),
+	url('knockout-htf27.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Futura-book';
+	src:url('futura-book.eot');
+	src:url('futura-book.eot?#iefix') format('embedded-opentype'),
+	url('futura-book.woff') format('woff'),
+	url('futura-book.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body{
+	font-family: Futura-book;
+	color:$text-color;
+	font-size:1.8em;
+}
+ul, li{
+	list-style-type: none;
+	padding:0;
+}
+a,a:hover, a:focus{
+	color:$text-color;
+}
+
+.navbar-default {
+    height:5.5em;
+}
+.navbar-logo{    
+	//padding: 12px 15px;
+    font-size: 18px;
+    line-height: 4em;
+    height: 3.5em;
+}
+.internationalization-right-ar{
+	float:right !important;
+	text-align: right;
+}
+.internationalization-left-ar{
+	float:left !important;
+}
+.title{
+	font-family: Knockout;
+	font-size: 3em;
+	color: $titles-color;
+	letter-spacing: 0.05em;
+}
+.social{
+	float: right;
+    margin: 0 3vw 15px;
+	ul li{
+		display: inline-block;
+		padding: 0 2px;
+	}
+	img,svg {
+    	width: 25px;
+	}
+	svg path{
+		fill:$social-color;
+	}
+	li a svg:hover {
+	 	opacity: 0.75;
+	}
+	li a svg {
+		opacity: 1;
+	    vertical-align: sub;
+		-webkit-transition: opacity .4s ease;
+		-moz-transition: opacity .4s ease;
+		-o-transition: opacity .4s ease;
+		transition: opacity .4s ease;
+	}
+}
+.download-menu{
+    padding-right: 20px;
+}
+.branches{
+	display: none;
+}
+.close-modal{
+   position: absolute;
+   right: 0%;
+   z-index: 100000;
+   svg path{
+		fill:$social-color;
+   }
+   img{
+   		height: 40px;
+   }
+   svg{
+   		width: 35px;
+   }
+}
+.close-modal-ar{
+	left:0 !important;
+}
+.languages{
+	float: right;
+	font-size: 12px;
+	padding: 0 3vw;
+}
+.branches-list{
+    overflow: hidden;
+    position:relative;
+}
+.modal, .modal-backdrop {
+    position: absolute !important;
+}
+.modal-backdrop.in {
+    opacity: 1 !important;
+}
+
+.group {
+    margin: 8vh 0 6vh 0px;
+	ul li{
+		line-height: 1.8em;
+	}
+	ul{		
+	    margin-top: -20px;
+	}
+}

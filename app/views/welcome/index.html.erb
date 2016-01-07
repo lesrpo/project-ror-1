@@ -1,0 +1,52 @@
+<div class="row branches-list">
+	<div class="col-sm-12 internationalization-right-<%= I18n.locale.to_s %>">
+		<div class="row">
+			<div class="col-sm-4 internationalization-right-<%= I18n.locale.to_s %>">
+				<div class="group">
+					<div class="title"><%=t :abu_dhabi %></div>
+					<ul>
+						<li><a class="branch-link" data-element="abu_dhabi_1"><%=t :abu_dhabi_1 %></a></li>
+						<li><a href="#"><%=t :abu_dhabi_2 %></a></li>
+					</ul>
+				</div>
+				<div class="group">
+					<div class="title"><%=t :doha %></div>
+					<ul>
+						<li><a href="#"><%=t :doha_1 %></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-8">
+				<div class="group">
+					<div class="title"><%=t :dubai %></div>
+					<ul>
+						<li><a href="#"><%=t :dubai_1 %></a></li>
+						<li><a href="#"><%=t :dubai_2 %></a></li>
+						<li><a href="#"><%=t :dubai_3 %></a></li>
+						<li><a href="#"><%=t :dubai_4 %></a></li>
+						<li><a href="#"><%=t :dubai_5 %></a></li>
+						<li><a href="#"><%=t :dubai_6 %></a></li>
+						<li><a href="#"><%=t :dubai_7 %></a></li>
+						<li><a href="#"><%=t :dubai_8 %></a></li>
+						<li><a href="#"><%=t :dubai_9 %></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="branch-info" tabindex="-1" role="dialog" aria-labelledby="branch-infoLabel" aria-hidden="true">
+		<a class="close-modal close-modal-<%= I18n.locale.to_s %>" data-dismiss="modal"><img src="/assets/close-modal.svg" alt="Close"></a>
+		<div class="branch-info-content internationalization-right-<%= I18n.locale.to_s %> "></div>
+	</div>
+	<div class="branches">
+		<div class="branch" id="abu_dhabi_1">
+			<p class="address"><%=t :abu_dhabi_1_address %></p>
+			<p class="phone"><%=t :abu_dhabi_1_phone %></p>
+			<br>
+			<p class="timings"><%=t :abu_dhabi_1_timing_1 %></p>
+			<p class="timings"><%=t :abu_dhabi_1_timing_2 %></p>
+			<br>
+			<p class="web-site"><a href="<%=t :abu_dhabi_1_web %>"><%=t :restaurant_site %></a></p>
+		</div>
+	</div>
+</div>
