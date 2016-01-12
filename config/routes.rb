@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     get "welcome/index"
   end
 
+  get '*path' => redirect('/')
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

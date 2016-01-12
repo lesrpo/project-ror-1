@@ -2,8 +2,9 @@
 <html>
 <head>
   <title>Carluccio's</title>
+  <%= favicon_link_tag "favicon_#{I18n.locale.to_s}.ico" %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <!--%= stylesheet_link_tag "fontface.#{I18n.locale}", media: 'all', 'data-turbolinks-track' => true %-->
+  <%= stylesheet_link_tag "fontface.#{I18n.locale.to_s}", media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -11,25 +12,25 @@
 <header class="navbar navbar-default navbar-static-top" role="navigation">
   	<div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header internationalization-right-<%= I18n.locale.to_s %>">       
-        <a class="navbar-logo" href="/"><img style="width: 150px;" src="/assets/logo_<%= I18n.locale.to_s %>.svg" alt="Carluccio's"></a>
+      <div class="navbar-header locales-right-<%= I18n.locale.to_s %>">       
+        <a class="navbar-logo" href="/"><img style="width: 150px;margin-top: 16px;" src="/assets/logo_<%= I18n.locale.to_s %>.svg" alt="Carluccio's"></a>
       </div>      
     </div><!-- /.container-fluid -->
-    <div class="div languages internationalization-left-<%= I18n.locale.to_s %>">
+    <div class="div languages locales-left-<%= I18n.locale.to_s %>">
       	<%= link_to_unless I18n.locale == :en, "EN", locale: :en %>
 		|
 		<%= link_to_unless I18n.locale == :ar, "AR", locale: :ar %>
 	</div>
 </header>
-<div class="container" >
+<div class="container">
 	<%= yield %>
 </div>
 <footer>
-	<div class="social internationalization-left-<%= I18n.locale.to_s %>">
+	<div class="social locales-left-<%= I18n.locale.to_s %>">
 		<ul>
-			<li><span class="download-menu"><a href="#">Download menu</a></span></li>
+			<li><span class="download-menu"><a href="#"><%=t :download_link %></a></span></li>
 			<li><a href="#"><img src="/assets/facebook.svg" alt="Facebook Page"></a></li>
-			<li><a href="#"><!--img src="" alt="Twitter Page"--></a></li>
+			<li><a href="#"><img src="/assets/twitter.svg" alt="Twitter Page"></a></li>
 			<li><a href="#"><img src="/assets/instagram.svg" alt="Instagram Page"></a></li>
 		</ul>
 	</div>

@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Knockout';
+	src:url('knockout-htf27.eot');
+	src:url('knockout-htf27.eot?#iefix') format('embedded-opentype'),
+	url('knockout-htf27.woff') format('woff'),
+	url('knockout-htf27.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Futura-book';
+	src:url('futura-book.eot');
+	src:url('futura-book.eot?#iefix') format('embedded-opentype'),
+	url('futura-book.woff') format('woff'),
+	url('futura-book.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+	font-family: Futura-book;
+	color:$text-color;
+	font-size:1.8em;
+}
+.title{
+	font-family: Knockout;
+	font-size: 3em;
+	color: $titles-color;
+	letter-spacing: 0.05em;
+}

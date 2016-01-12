@@ -7,43 +7,23 @@ $social-color :#999999;
 $titles-color:#666666;
 $text-color:#999999;
 
-@font-face {
-	font-family: 'Knockout';
-	src:url('knockout-htf27.eot');
-	src:url('knockout-htf27.eot?#iefix') format('embedded-opentype'),
-	url('knockout-htf27.woff') format('woff'),
-	url('knockout-htf27.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Futura-book';
-	src:url('futura-book.eot');
-	src:url('futura-book.eot?#iefix') format('embedded-opentype'),
-	url('futura-book.woff') format('woff'),
-	url('futura-book.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body{
-	font-family: Futura-book;
-	color:$text-color;
-	font-size:1.8em;
-}
 ul, li{
 	list-style-type: none;
 	padding:0;
 }
 a,a:hover, a:focus{
 	color:$text-color;
+    cursor: pointer;
 }
 
 .navbar-default {
     height:5.5em;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .navbar-logo{    
 	//padding: 12px 15px;
@@ -51,18 +31,12 @@ a,a:hover, a:focus{
     line-height: 4em;
     height: 3.5em;
 }
-.internationalization-right-ar{
+.locales-right-ar{
 	float:right !important;
 	text-align: right;
 }
-.internationalization-left-ar{
+.locales-left-ar{
 	float:left !important;
-}
-.title{
-	font-family: Knockout;
-	font-size: 3em;
-	color: $titles-color;
-	letter-spacing: 0.05em;
 }
 .social{
 	float: right;
@@ -136,4 +110,8 @@ a,a:hover, a:focus{
 	ul{		
 	    margin-top: -20px;
 	}
+}
+.branch-info-content{
+    padding-left: 15px;
+    padding-right: 15px;
 }
